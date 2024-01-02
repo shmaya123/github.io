@@ -15,16 +15,19 @@
         .image-box {
             border: 3px solid #333; /* Solid black border */
             padding: 20px;         /* Space between the border and the image */
-            display: block;        /* Makes the div block-level for centering */
+            display: flex;         /* Use flexbox for centering */
+            justify-content: center;
+            align-items: center;
             max-width: 80%;        /* Maximum width of the box */
             max-height: 80vh;      /* Maximum height relative to the viewport height */
             text-align: center;    /* Center aligns the image inside the box */
             border-radius: 15px;   /* Rounded corners */
             box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+            overflow: hidden;      /* Ensures no content spills out */
         }
         .image-box img {
-            max-width: 100%;      /* Makes the image responsive, maxing out at the container's width */
-            max-height: 100%;     /* Limits the image height to its container */
+            max-width: 100%;      /* Ensures the image fits width-wise */
+            max-height: 100%;     /* Ensures the image fits height-wise */
             height: auto;         /* Keeps the image aspect ratio */
         }
     </style>
