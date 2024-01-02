@@ -4,17 +4,27 @@
     <title>48 Ridge</title>
     <link rel="icon" type="image/x-icon" href="favicon2.ico">
     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Set the body and html to full height */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center content vertically and horizontally */
+        }
         .image-box {
             border: 3px solid #333; /* Solid black border */
             padding: 20px;         /* Space between the border and the image */
-            margin: 50px auto;     /* Centers the box on the page with margin on top and bottom */
             display: block;        /* Makes the div block-level for centering */
             max-width: 80%;        /* Maximum width of the box */
+            max-height: 80vh;      /* Maximum height relative to the viewport height */
             text-align: center;    /* Center aligns the image inside the box */
             border-radius: 15px;   /* Rounded corners */
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
         }
         .image-box img {
             max-width: 100%;      /* Makes the image responsive, maxing out at the container's width */
+            max-height: 100%;     /* Limits the image height to its container */
             height: auto;         /* Keeps the image aspect ratio */
         }
     </style>
